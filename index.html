@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс на створення сайту</title>
+    <style>
+        :root {
+            --green: #2f4f4f;
+            --orange: #d17b27;
+            --light: #f9f9f9;
+            --dark: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--green);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--light);
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--green);
+        }
+
+        .note {
+            background-color: #fff9e6;
+            padding: 1rem;
+            border-left: 5px solid var(--orange);
+            margin: 2rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Мобільна адаптація */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                margin-bottom: 1rem;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 1rem;
+                background-color: #fff;
+            }
+
+            td {
+                padding: 0.5rem 0;
+                border: none;
+                position: relative;
+            }
+
+            td::before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin-bottom: 0.3rem;
+                color: var(--green);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>💼 Прайс на створення сайту</h1>
+        <p>Розрахунок вартості розробки сайту під ключ</p>
+    </header>
+
+    <div class="container">
+        <h2>✅ Основні роботи:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Послуга</th>
+                    <th>Вартість</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Послуга">🔧 Верстка сайту (адаптивна, анімації, галереї, паралакс)</td>
+                    <td data-label="Вартість" class="highlight">3000 грн</td>
+                </tr>
+                <tr>
+                    <td data-label="Послуга">🎨 Дизайн сайту (стиль, кольори, шрифти, UI-логіка)</td>
+                    <td data-label="Вартість" class="highlight">1500 грн</td>
+                </tr>
+                <tr>
+                    <td data-label="Послуга">✉️ Підключення форм (форма бронювання + обробка)</td>
+                    <td data-label="Вартість" class="highlight">500 грн</td>
+                </tr>
+                <tr>
+                    <td data-label="Послуга">🌐 Адміністрування (розміщення сайту + реєстрація в Google)</td>
+                    <td data-label="Вартість" class="highlight">1000 грн</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Загальна вартість робіт: <span class="highlight">6000 грн</span></strong></p>
+
+        <div class="note">
+            <h3>🌍 Окремо: Вартість домену</h3>
+            <p>Ціна домену залежить від:</p>
+            <ul>
+                <li>🔤 <strong>Назви сайту</strong> (довжина, унікальність)</li>
+                <li>🔚 <strong>Зони домену</strong> (.com, .com.ua, .org тощо)</li>
+            </ul>
+            <p><strong>Приблизна вартість:</strong> 3000 – 4000 грн / рік<br>(оплачується окремо, напряму реєстратору)</p>
+        </div>
+
+        <p><strong>📌 Примітка:</strong></p>
+        <ul>
+            <li>Після оплати я надаю всі файли сайту.</li>
+            <li>Можу допомогти з розміщенням на хостингу.</li>
+            <li>Ціна фіксована та охоплює повний цикл створення сайту.</li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2025 Розроблено спеціально для клієнтів. Всі права захищено.
+    </footer>
+</body>
+</html>
